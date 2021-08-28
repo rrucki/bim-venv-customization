@@ -7,15 +7,15 @@ time_start = time.time()
 m_per = 0.01
 w_per = 0.01
 k_per = 0.01
-r_per = 0.5    # może 0.25
+r_per = 0.5
 o_per = 0.01
-mtd_per = 0.5   # może 0.4
+mtd_per = 0.5
 e_per = 0.01
 adt_per = 0.01
-dt_per = 0.5    # może 0.4
+dt_per = 0.5
 oo_per = 0.01
 d_per = 0.01
-c_per = 0.5     # raczej 0.5
+c_per = 0.5
 
 mouse = Controller_mouse()
 keyboard = Controller_keyboard()
@@ -151,7 +151,6 @@ pyautogui.click(button="left")
 time.sleep(c_per)
 pyautogui.moveTo(900.0, 660.0, duration=m_per)
 time.sleep(w_per)
-# Ended
 keyboard.press(Key.right)
 time.sleep(e_per)
 keyboard.release(Key.right)
@@ -208,7 +207,6 @@ pyautogui.click(button="left")
 time.sleep(c_per)
 pyautogui.moveTo(819.0, 768.0, duration=m_per)
 time.sleep(w_per)
-# Ended
 pyautogui.moveTo((42.0, 285.0), duration=mtd_per)
 pyautogui.dragTo(283.0, 379.0, dt_per, button="left")
 time.sleep(adt_per)
